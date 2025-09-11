@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link href="profile_style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="welcome">Welcome to my Profile</h1>
+        </header>
+        <main>
+            <h3>
+                What do you want to know?<br>
+                <button id="about">About Me</button>
+                <button id="works">Completed projects</button>
+                <button id ="contact">Contact Information</button><br>
+                <p id="more"></p>
+            </h3>
+        </main>
+        <footer> 
+            Now you know about me can I know you?<br>
+            <form>
+                <input type="text" placeholder="Name" autocomplete="off" id="name" pattern=".+"><br>
+                <input type="tel" placeholder="Phone Number" autocomplete="off" id ="phone" pattern="\d{11}"><br>
+                <input type="email" placeholder="Email" autocomplete="off" id ="email" pattern=".+\@.+"><br>
+                <button type="submit">Submit</button><br>
+            </form>
+        </footer>
+        <script src="profile_script.js"></script>    
+    </body>
+</html>

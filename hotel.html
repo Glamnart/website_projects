@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link href="hotel_style.css" rel="stylesheet">
+<link href="assets/favicon.png" rel="icon">
+<title>Hotels.ng: Book the best Hotels in Nigeria</title>
+</head>
+<body>
+    <header>
+        <a href="https://hotels.ng/"><img id="logo" src="assets/logo.png"></a>
+        <head2>
+            <a href="https://api.whatsapp.com/send?phone=2347025568505"><img id="whatsapp" src="assets/whatsapp-icon.png"></a>
+
+            <div id="dropdown_contact">
+                <button id="contact_main"><img src="assets/navbar-contact-min.jpg"><span>You can call us to book your hotel<br>+234 814 880 8800</span><span style="color: white;">&#9660;</span></button>
+                <div class="dropdown_menu" id="contact">
+                        <a href="https://web.whatsapp.com/send?text=How can we help you!&phone=2347025568505"><img src="assets/whatsapp-icon.png">+234 702 556 8505</a>
+                        <a href="tel:+2348089530980"><img src="assets/phoneicon.jpg">+234 814 880 8800</a>
+                        <a href="tel:+2348089530980"><img src="assets/phoneicon.jpg">+234 808 953 0980</a>
+                        <a href="tel:+2348089530980"><img src="assets/phoneicon.jpg">+234 813 697 1836</a>
+                        <a href="tel:+2348089530980"><img src="assets/social-media-logo-design.png">+234 808 953 0980</a>
+                </div>
+            </div>
+
+            <div id="dropdown_currency">
+                <p><img id="currency_flag" style="margin-right: 5px;" src="assets/nigeria-flag.svg"><span id="currency_symbol"> &#8358;</span><a id="currency_main" href="#"><span style="color: white; margin-left: 5px; margin-right: 20px;">&#9660;</span></a></p>
+                <div class="dropdown_menu" id="currency">
+                    Choose your preferred currency for the hotel rates:<br> 
+                    <a id="naira" href='#'>&#8358;  Nigerian Naira</a>
+                    <a id="euro" href='#'>&#8364;  European Euro</a>
+                    <a id="dollar" href='#'>$  U.S. dollar</a>
+                    <a id="pound" href='#'>&#163;  British Pound Sterling</a>
+                    <a id="shilling" href='#'>KSh  Kenyan Shilling</a>
+                    <a id="rupee" href='#'>&#8377;  Indian Rupee</a>
+                    <a id="rand" href='#'>R  Rand</a>
+                </div>
+            </div>
+            <div id="dropdown_account">
+                <p><img style="margin-right: 5px;" src="assets/profile-circle-icon.png">Account<a id="account_main" href="#"><span style="color: white; margin-left: 5px;">&#9660;</span></a></p>
+                <div class="dropdown_menu" id="account">
+                    Sign in to access exclusive memeber deals<br>
+                    <a href="https://hotels.ng/signin"><button>Sign in</button></a><br>
+                    New here? <a style="color: #084482; display: inline; font-size: inherit;" href="https://hotels.ng/signup">Sign up</a>
+                </div>
+            </div>
+        </head2>
+    </header>
+    <main>
+        <div id="welcome">
+            <h2>Find and book hotels in Nigeria</h2><br>
+            Search through 13,541 hotels in Nigeria
+        </div>
+        <div id="box-search">
+            <form action="https://hotels.ng/hotels/search" method="get" id="search">
+                <box id="hotel_search"><img src="assets/search.png"><input placeholder= "Search for a city or particular hotel" type="text" name="query" autocomplete="off"></box>
+                <box id="date-check"><img src="assets/calendar.png"><input placeholder="Check In - Check Out" readonly="readonly" id="checks"></box>
+                <button>Find Hotels</button>
+            </form>
+        </div>
+        <div id="suggested">
+            <h2>Suggested Destinations in Nigeria</h2>
+            <h5>Below are the most popular travel destinations in Nigeria</h5>
+            <div id="suggested_place">
+                <a href="https://hotels.ng/hotels-in-lagos"><button id="lagos"><span id="lagosh">Hotels in<br>Lagos</span><br>3,581 hotels</button></a>
+                <a href="https://hotels.ng/hotels-in-abuja"><button id="abuja"><span id="abujah">Hotels in<br>Abuja</span><br>1,248 hotels</button></a>
+                <a href="https://hotels.ng/hotels-in-rivers/port-harcourt"><button id="PH"><span id="PHh">Hotels in<br>Port Harcourt</span><br>441 hotels</button></a>
+                <a href="https://hotels.ng/hotels-in-kaduna"><button id="kaduna"><span id="kadunah">Hotels in<br>Kaduna</span><br>327 hotels</button></a>
+                <a href="https://hotels.ng/hotels-in-akwaibom/uyo"><button id="uyo"><span id="uyoh">Hotels in<br>Uyo</span><br>221 hotels</button></a>
+                <a href="https://hotels.ng/hotels-in-oyo/ibadan"><button id="ibadan"><span id="ibadanh">Hotels in<br>Ibadan</span><br>505 hotels</button></a>
+            </div>
+        </div>
+        <div id="deals">
+            <h2>Today's Top Hotel Deals </h2>
+            <h5>A selection of the best hotel deals, only available today</h5>
+            <div id="hdeals">
+                <div class="shelf">
+                    <box>
+                        <a href='https://hotels.ng/hotel/HN350983S-florence-hotel-and-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=florence-hotel-and-suites'><img src="assets/hotel1.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/HN350983S-florence-hotel-and-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=florence-hotel-and-suites">Florence Hotel and S...</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-edo/benin">Benin,</a><a class='black' href="https://hotels.ng/hotels-in-edo">Edo</a> 
+                    </box>
+
+                    <box>
+                        <a href='https://hotels.ng/hotel/1391154-corinthia-villa-hotel-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=the-corinthia-villa-h-otel-suites'><img src="assets/hotel2.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/1391154-corinthia-villa-hotel-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=the-corinthia-villa-h-otel-suites">The Corinthia Villa...</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-abuja/garki-2">Garki 2,</a><a class='black' href="https://hotels.ng/hotels-in-abuja">Abuja</a>
+                    </box>
+
+                    <box>
+                        <a href='https://hotels.ng/hotel/1470842-luxol-homes-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=luxol-homes-suites'><img src="assets/hotel3.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/1470842-luxol-homes-suites?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=luxol-homes-suites">Luxol Homes & Suites</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-lagos/ikeja">Ikeja,</a><a class='black' href="https://hotels.ng/hotels-in-lagos">Lagos</a>
+                    </box>
+                </div>
+
+                <div class="shelf">
+                    <box>
+                        <a href='https://hotels.ng/hotel/26241-ibis-lagos-airport-lagos?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=ibis-lagos-airport'><img src="assets/hotel4.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/26241-ibis-lagos-airport-lagos?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=ibis-lagos-airport">Ibis Lagos Airport</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-lagos/ajao-estate">Ajao estate,</a><a class='black' href="https://hotels.ng/hotels-in-lagos">Lagos</a> 
+                    </box>
+
+                    <box>
+                        <a href='https://hotels.ng/hotel/1470786-bon-hotel-garden-city-port-harcourt?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=white-stone-hotel-and-resort-limited-formerly-bon-hotel-garden-city-ph'><img src="assets/hotel5.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/1470786-bon-hotel-garden-city-port-harcourt?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=white-stone-hotel-and-resort-limited-formerly-bon-hotel-garden-city-ph">White Stone Hotel a...</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-rivers/port-harcourt">Port harcourt,</a><a class='black' href="https://hotels.ng/hotels-in-rivers">Rivers</a>
+                    </box>
+
+                    <box>
+                        <a href='https://hotels.ng/hotel/1470633-wavecrest-beach-resort?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=wavecrest-beach-resort'><img src="assets/hotel6.jpeg"></a><br>
+                        <a class='blue' href="https://hotels.ng/hotel/1470633-wavecrest-beach-resort?utm_source=home&utm_campaign=top-deals&utm_medium=on-site&utm_content=wavecrest-beach-resort">Wavecrest Beach Re...</a><br>
+                        <a class='black' href="https://hotels.ng/hotels-in-lagos/ibeju-lekki">Ibeju-lekki,</a><a class='black' href="https://hotels.ng/hotels-in-lagos">Lagos</a>
+                    </box>
+                </div>
+            </div>
+        </div>
+        <div id="popular">
+            <h2>Popular cities with Hotels.ng travellers</h2>
+            <h5>See the top destinations people are traveling to</h5>
+            <div>
+                <div class="shelf">
+                    <span><a class="city_card"  id='lagosi' href="https://hotels.ng/hotels-in-lagos">3,581<br><span id='bold'>Lagos Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-lagos"><button id="lagbutton">Book Hotels in Lagos</button></a></span>
+                    <span><a  class="city_card"  id='abujai' href="https://hotels.ng/hotels-in-abuja">1,248<br><span id='bold'>Abuja Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-abuja"><button id="abujabutton">Book Hotels in Abuja</button></a></span>
+                    <span><a  class="city_card"  id='calabari' href="https://hotels.ng/hotels-in-crossriver/calabar">288<br><span id='bold'>Calabar Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-crossriver/calabar"><button id="calbutton">Book Hotels in Calabar</button></a></span>
+                </div>
+
+                <div class="shelf">
+                    <span><a  class="city_card"  id='PHi' href="https://hotels.ng/hotels-in-rivers/port-harcourt">441<br><span id='bold'>Port Harcourt Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-rivers/port-harcourt"><button id="PHbutton">Book Hotels in Port Harcourt</button></a></span>
+                    <span><a  class="city_card"  id='owerrii' href="https://hotels.ng/hotels-in-imo/owerri">255<br><span id='bold'>Owerri Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-imo/owerri"><button id="owerributton">Book Hotels in Owerri</button></a></span>
+                    <span><a  class="city_card"  id='uyoi' href="https://hotels.ng/hotels-in-akwaibom/uyo">221<br><span id='bold'>Uyo Hotels</span></a><a class="pop_button" href="https://hotels.ng/hotels-in-akwaibom/uyo"><button id="uyobutton">Book Hotels in Uyo</button></a></span>
+                </div>
+            </div>
+        </div>
+        <div id="all">
+            <h2>Which City Do You Want To Book A Hotel ?</h2>
+            <h5>13,541 hotels in 1483 cities / towns in Nigeria</h5>
+            <div>
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abia">Hotels in Abia</a><br>
+                        297 hotels in Abia with over 212 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abuja">Hotels in Abuja</a><br>
+                        1,248 hotels in Abuja with over 2,727 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-adamawa">Hotels in Adamawa</a><br>
+                        70 hotels in Adamawa with over 58 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-akwaibom">Hotels in Akwa Ibom</a><br>
+                        487 hotels in Akwa Ibom with over 370 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-anambra">Hotels in Anambra</a><br>
+                        305 hotels in Anambra with over 192 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-bauchi">Hotels in Bauchi</a><br>
+                        51 hotels in Bauchi with over 76 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-bayelsa">Hotels in Bayelsa</a><br>
+                        182 hotels in Bayelsa with over 74 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-benue">Hotels in Benue</a><br>
+                        284 hotels in Benue with over 66 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-borno">Hotels in Borno</a><br>
+                        24 hotels in Borno with over 28 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-crossriver">Hotels in Cross River</a><br>
+                        359 hotels in Cross River with over 420 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-delta">Hotels in Delta</a><br>
+                        661 hotels in Delta with over 531 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-ebonyi">Hotels in Ebonyi</a><br>
+                        101 hotels in Ebonyi with over 28 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-edo">Hotels in Edo</a><br>
+                        393 hotels in Edo with over 559 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-ekiti">Hotels in Ekiti</a><br>
+                        231 hotels in Ekiti with over 220 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-enugu">Hotels in Enugu</a><br>
+                        362 hotels in Enugu with over 519 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-fct">Hotels in FCT</a><br>
+                        1 hotels in Fct with no hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-gombe">Hotels in Gombe</a><br>
+                        42 hotels in Gombe with over 35 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-imo">Hotels in Imo</a><br>
+                        353 hotels in Imo with over 387 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-jigawa">Hotels in Jigawa</a><br>
+                        35 hotels in Jigawa with over 11 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-kaduna">Hotels in Kaduna</a><br>
+                        327 hotels in Kaduna with over 302 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abia">Hotels in Abia</a><br>
+                        297 hotels in Abia with over 212 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abuja">Hotels in Abuja</a><br>
+                        1,248 hotels in Abuja with over 2,727 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-adamawa">Hotels in Adamawa</a><br>
+                        70 hotels in Adamawa with over 58 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-akwaibom">Hotels in Akwa Ibom</a><br>
+                        487 hotels in Akwa Ibom with over 370 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-anambra">Hotels in Anambra</a><br>
+                        305 hotels in Anambra with over 192 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abia">Hotels in Abia</a><br>
+                        297 hotels in Abia with over 212 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abuja">Hotels in Abuja</a><br>
+                        1,248 hotels in Abuja with over 2,727 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-adamawa">Hotels in Adamawa</a><br>
+                        70 hotels in Adamawa with over 58 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-akwaibom">Hotels in Akwa Ibom</a><br>
+                        487 hotels in Akwa Ibom with over 370 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-anambra">Hotels in Anambra</a><br>
+                        305 hotels in Anambra with over 192 hotel reviews 
+                    </div>
+                </div>
+
+                <div class='shelf'>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abia">Hotels in Abia</a><br>
+                        297 hotels in Abia with over 212 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-abuja">Hotels in Abuja</a><br>
+                        1,248 hotels in Abuja with over 2,727 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-adamawa">Hotels in Adamawa</a><br>
+                        70 hotels in Adamawa with over 58 hotel reviews
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-akwaibom">Hotels in Akwa Ibom</a><br>
+                        487 hotels in Akwa Ibom with over 370 hotel reviews 
+                    </div>
+                    <div class="city_hotel">
+                        <a class='blue' href="https://hotels.ng/hotels-in-anambra">Hotels in Anambra</a><br>
+                        305 hotels in Anambra with over 192 hotel reviews 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="offer">
+            <h2>Special Hotel Deals and Offers</h2><br>
+            <h5>Enter your email address to receive secret hotels deals</h5><br>
+            <form  action="https://hotels.ng" method="get">
+                <input id='suscribe' placeholder="Enter your email address" name="email_subscribe" type="email" pattern=".+@.+" autocomplete="off">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div id="featured">
+            <h2>We've been featured in</h2>
+            <div class="shelf">
+                <a href="http://www.bbc.co.uk/news/business-24381684"><img src="assets/bbc.png"></a>
+                <a href="http://www.forbes.com/sites/mfonobongnsehe/2015/02/05/30-most-promising-young-entrepreneurs-in-africa-2015/3/"><img src="assets/forbes.png"></a>
+                <a href="https://www.newsweek.com/2014/05/30/money-move-251883.html"><img src="assets/newsweek.png"></a>
+                <a href="https://itweb.africa/content/mQwkoq6Kxnlv3r9A"><img src="assets/itweb.png"></a>
+            </div>
+        </div>
+        <div id="add">
+            <h2>Get More Bookings for Your Hotel</h2>
+            <h5>Find out why over 13,137 hotels managers trust Hotels.ng</h5><br>
+            <a href="https://hotels.ng/hotel/add"><button>Add Your Hotel</button></a>
+        </div>
+        <div id="app">
+            <div class="shelf">
+                <img src="assets/app-image.png">
+                <div id="app_about">
+                    <h1>Get the Hotels.ng app</h1>
+                    <h3>Download the hotels.ng app and book a hotel instantly</h3>
+                    Book your hotel instantly with our Android and iOS Apps.<br>
+                    <a href="https://play.google.com/store/apps/details?id=ng.hotels.booking.app"><img src="assets/google-play-min.png"></a>
+                    <a href="https://apps.apple.com/us/app/hotels-ng/id1561644946"><img src="assets/apple-store.png"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lock">
+            <img src="assets/lock.png">
+            <div>
+                <h>Enter your email address to unlock hotel deals</h>
+                Sign up to start receiving exclusive offers
+            </div>
+            <button id="unlock">Unlock</button>
+        </div>
+        <div id="mobile_end">
+            <a href="https://hotels.ng/about">About Us</a>
+            <a href='https://hotels.ng/privacy'>Privacy</a>
+            <a href='https://hotels.ng/terms'>Terms of Service</a>
+            <a href='https://hotels.ng/how-it-works'>How It Works</a>
+            <span>Copyright © 2025</span>
+        </div>
+    </main>
+    <footer>
+        <div id="more">
+            <p>
+                Company
+                <a href='https://hotels.ng/visa'>Visa</a> 
+                <a href='https://blog.hotels.ng/'>Blog</a>
+                <a href='https://hotels.ng/about'>About Us</a>
+                <a href='https://hotels.ng/press'>Press Page</a>
+                <a href='https://hotel.ng/jobs'>Job Openings</a>
+                <a href='https://hotels.ng/privacy'>Privacy Policy</a>
+                <a href='https://hotels.ng/terms'>Terms of Service</a>
+                <a href='https://hotels.ng/how-it-works'>How It Works</a>
+                <a href='https://hng.tech/internship'>HNG Internship</a>
+            </p>
+
+            <p>
+                Community
+                <a href='https://www.twitter.com/hotelsng'>Twitter</a>
+                <a href='https://www.facebook.com/hotelsng'>Facebook</a>
+                <a href='https://instagram.com/hotelsng'>Instagram</a>
+                <a href='https://hotels.ng/travel'>Travel Blog</a>
+                <a href='https://hotels.ng/places'>Tourist Attractions</a>
+                <a href='https://hotels.ng/guides'>Travel guide</a>
+                <a href='https://hotels.ng/top-hotels'>Top Hotels in Nigeria</a>
+                <a href='https://hotels.ng/places/top_places'>Top Places in Nigeria</a>
+                <a href='https://cars.ng'>Cars in Nigeria</a>
+            </p>
+
+            <p>
+                Top Cities
+                <a href='https://hotels.ng/hotels-in-lagos'>Hotels in Lagos</a>
+                <a href='https://hotels.ng/hotels-in-crossriver/calabar'>Hotels in Calabar</a>
+                <a href='https://hotels.ng/hotels-in-abuja'>Hotels in Abuja</a>
+                <a href='https://hotels.ng/hotels-in-lagos/ikoyi'>Hotels in Ikoyi</a>
+                <a href='https://hotels.ng/hotels-in-rivers/port-harcourt'>Hotels in Port Harcourt</a>
+                <a href='https://hotels.ng/hotels-in-imo/owerri'>Hotels in Owerri</a>
+                <a href='https://hotels.ng/hotels-in-lagos/maryland'>Hotels in Maryland</a>
+                <a href='https://hotels.ng/hotels-in-abia'>Hotels in Abia</a>
+                <a href='https://hotels.ng/hotels-in-plateau/jos'>Hotels in Jos</a>
+            </p>
+
+            <p>
+                Top Destinations
+                <a href='https://hotels.ng/places/abuja'>Abuja</a>
+                <a href='https://hotels.ng/places/calabar'>Calabar</a>
+                <a href='https://hotels.ng/places/lagos'>Lagos</a>
+                <a href='https://hotels.ng/places/enugu'>Enugu</a>
+                <a href='https://hotels.ng/places/port-harcourt'>Port Harcourt</a>
+                <a href='https://hotels.ng/places/benin'>Benin city</a>
+                <a href='https://hotels.ng/places/ibadan'>Ibadan</a>
+                <a href='https://hotels.ng/places/abeokuta'>Abeokuta</a>
+            </p>
+
+            <p>
+                Top Hotels
+                <a href='https://hotels.ng/hotel/26241-ibis-lagos-airport-lagos'>Ibis Lagos Airport</a>
+                <a href='https://hotels.ng/hotel/52497-hotel-ibis-lagos-ikeja-lagos'>Hotel Ibis Lagos Ikeja</a>
+                <a href='https://hotels.ng/hotel/98947-eko-hotel-suites-lagos'>Eko Hotel</a>
+                <a href='https://hotels.ng/hotel/1470720-the-safron-hotel'>The Safron Hotel</a>
+                <a href='https://hotels.ng/hotel/34353-grand-ibro-hotel-abuja'>Grand Ibro Hotel</a>
+                <a href='https://hotels.ng/hotel/59691-intercontinental-lagos-hotel-lagos'>The Lagos Continental Hotel (Formerly Intercontinental Lagos Hotel)</a>
+                <a href='https://hotels.ng/hotel/55821-beni-apartments-lagos'>Beni Apartments</a>
+                <a href='https://hotels.ng/hotel/1008541-shore-gate-hotel-lagos'>Shoregate Hotel</a>
+                <a href='https://hotels.ng/hotel/HN365015S-rosewood-inn'>Rosewood Inn</a>
+                <a href='https://hotels.ng/hotel/HN351355S-academy-guest-house'>Academy Guest House</a>
+                <a href='https://hotels.ng/hotel/HN351364S-tranquil-oasis-ltd'>Tranquil Oasis Ltd</a>
+                <a href='https://hotels.ng/hotel/1015136-citiheight-hotel'>CitiHeight Hotel</a>
+                <a href='https://hotels.ng/hotel/49373-catholic-guest-house-abuja'>Pope John Paul Catholic Guest House</a>
+                <a href='https://hotels.ng/hotel/998818-chantella-suites-lagos'>Choice Suites (Formerly Chantella Suites)</a>
+                <a href='https://hotels.ng/hotel/92856-the-avenue-suites-lagos'>Avenue Suites</a>
+            </p>
+        </div>
+
+        <div id="end">
+            <h>
+                Copyright © 2025 Hotel Booking Limited All Rights Reserved
+            </h>
+            <span>
+                Certified by:
+                <img src="assets/nanta.svg" title="National Association of Nigeria Travel Agencies (NANTA)">
+                <img src="assets/ntdc.svg"  title="Nigerian Tourism Development Corporation (NTDC)">
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="hotel_script.js"></script>
+</body>
+</html>
