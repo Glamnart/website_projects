@@ -1,0 +1,41 @@
+body
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+.card
+{
+    border: 2px solid black;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: gray;
+    box-shadow: 5px 5px black;
+}
+
+.card h2
+{
+    text-align: center;
+}
+
+@media (max-width: 915px) 
+{
+    body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
